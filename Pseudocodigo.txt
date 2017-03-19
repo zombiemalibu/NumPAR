@@ -1,0 +1,26 @@
+Pseudocodigo:
+
+1.Inicio
+2.inicializar variables i,j,valor,bandera,arreglo y par_encontrado
+3. Desde j = 0 hasta 999 Hacer
+	3.1 arreglo[j]=numero aleatorio
+4.Escribir "Programa Buscador de Numero Par en un Arreglo"
+5.Mientras par_encontrado%2 igual a 0 y arreglo[i+2] diferente de indice 999 Hacer
+	5.1 Si arreglo[i]%2 igual a 0 y arreglo[i+1]%2 diferente de 0 y arreglo[i-1]+arreglo[i+1] igual arreglo[i] y arreglo[i]/2 igual a arreglo[i+2] hacer
+		par_encontrado=arreglo[i]
+		valor=arreglo[i]
+		Escribir Numero Par encontrado
+		Fin Si
+	incrementar i
+	Fin Mientras
+6.Mientras bandera diferente de 1 y par_encontrado diferente de 0 hacer
+	6.1 valor igual a valor/2
+	    incrementar contador
+	    6.1.1 Si valor%2 diferente 0 o valor diferente de 1 hacer
+		  Igualar bandera a 1
+		  Escribir Numero de veces divisible entre 2
+	          Fin Si
+7. Si par_encontrado es igual a 0 hacer
+	7.1 Escribir Numero Par no Encontrado
+	Fin Si
+8. Fin
